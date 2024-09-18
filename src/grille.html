@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid grid-flow-row grid-cols-4 grid-rows-3 gap-2 p-4">
+      <div class="bg-red-500">Item 1</div>
+      <div class="bg-green-500">Item 2</div>
+      <div class="bg-blue-500">Item 3</div>
+      <div class="bg-yellow-500">Item 4</div>
+      <div class="bg-purple-500">Item 5</div>
+      <div class="bg-pink-500">Item 6</div>
+    </div>
+
+    <div class="h-screen">
+      <div
+        class="grid h-screen grid-flow-row-dense grid-cols-3 gap-2 bg-sky-500 p-4"
+      >
+        <div class="bg-fuchsia-500">item1</div>
+        <div class="bg-fuchsia-500">item2</div>
+        <div class="col-span-3 bg-fuchsia-500">item3</div>
+        <div class="bg-fuchsia-500">item4</div>
+        <div class="bg-fuchsia-500">item5</div>
+        <div class="bg-fuchsia-500">item 6</div>
+        <div class="bg-fuchsia-500">item7</div>
+      </div>
+    </div>
+    <h3 class="text-ellipsis text-3xl font-medium text-sky-700">
+      Position des elements d'une grille
+    </h3>
+
+    <div class="h-screen grid-cols-6 grid-rows-6 gap-4 p-4">
+      <div
+        class="col-span-6 row-span-1 flex items-center justify-center bg-red-400 p-2 text-white"
+      >
+        En tete
+      </div>
+
+      <div
+        class="bg-green-300-400 col-span-1 row-span-4 flex items-center justify-center p-2 text-white"
+      >
+        Menu
+      </div>
+      <div
+        class="col-span-4 row-span-4 flex items-center justify-center bg-blue-400 p-2 text-white"
+      >
+        Contenue principal
+      </div>
+      <div
+        class="bg-yellow-300-400 col-span-1 row-span-4 flex items-center justify-center p-2 text-white"
+      >
+        Bar laterale
+      </div>
+
+      <div
+        class="col-span-6 row-span-1 flex items-center justify-center bg-gray-300 p-2 text-white"
+      >
+        Pied de page
+      </div>
+    </div>
+  </body>
+</html>
